@@ -209,7 +209,7 @@ const styles = {
   width: '30vw',
   height: '100vh',
   cursor: 'pointer',
-  borderLeft: '1px solid #000'
+  borderLeft: '2px solid #000'
  },
  controlTools: {
   display: 'flex',
