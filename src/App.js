@@ -42,7 +42,12 @@ export default function App() {
   const [fileToUpload, setFileToUpload] = useState(null);
 
   useEffect(() => {
-    setMyFiles(data);
+    const storedData = localStorage.getItem('data');
+    if (storedData) {
+      setMyFiles(JSON.parse(storedData));
+    } else {
+      setMyFiles(data);
+    }
   }, []);
 
 const handleFileUpload = (event) => {

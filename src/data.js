@@ -1,3 +1,7 @@
+import { useEffect } from "react"
+
+// export function Data () {
+ 
 
 export const data = [
     {
@@ -36,5 +40,9 @@ export const data = [
         type: 'image',
         path: "/file-server/Picasso.jpg"
       },
+      
   ]
+  // Save the updated data array to localStorage
+  localStorage.setItem('data', JSON.stringify(data));
+// }
  
